@@ -1,6 +1,7 @@
 # peachfuzz
 
 ![Travis CI Status](https://img.shields.io/travis/devinus/peachfuzz.svg)
+![Coveralls Status](https://img.shields.io/coveralls/devinus/peachfuzz.svg)
 
 ![Peach Fuzz](peachfuzz.jpg)
 
