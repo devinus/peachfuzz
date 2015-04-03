@@ -26,15 +26,22 @@ describe('peachfuzz', function() {
     expect(rendered).to.equal('Hello Devin Torres');
   });
 
-  it('replaces multiline template', function() {
-    template = 'Hello {{name}}\n\nThe year is {{year}}';
+  it('replaces vars with a space in the key', function() {
+    template = 'Hello {{full name}}';
+    rendered = peachfuzz(template, { 'full name': 'Devin Torres' });
+    expect(rendered).to.equal('Hello Devin Torres');
+  });
 
-    rendered = peachfuzz(template, {
-      name: 'Devin',
-      year: 2015
-    });
+  it('replaces vars with a single } character in the key', function() {
+    template = 'Hello {{full}name}}';
+    rendered = peachfuzz(template, { 'full}name': 'Devin Torres' });
+    expect(rendered).to.equal('Hello Devin Torres');
+  });
 
-    expect(rendered).to.equal('Hello Devin\n\nThe year is 2015');
+  it("replaces multiple values", function() {
+    template = 'Hello {{name}}. The year is {{year}}';
+    rendered = peachfuzz(template, { name: 'Devin', year: 2015 });
+    expect(rendered).to.equal('Hello Devin. The year is 2015');
   });
 
   it('replaces undefined vars with an empty string', function() {
