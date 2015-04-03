@@ -1,0 +1,28 @@
+{
+  "name": "peachfuzz",
+  "version": "0.1.0",
+  "description": "Simple Mustache inspired string substitution",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:devinus/peachfuzz.git"
+  },
+  "keywords": [
+    "mustache",
+    "string",
+    "substitution"
+  ],
+  "author": "Devin Torres",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/devinus/peachfuzz/issues"
+  },
+  "homepage": "https://github.com/devinus/peachfuzz",
+  "devDependencies": {
+    "chai": "^2.2.0",
+    "mocha": "^2.2.1"
+  }
+}
