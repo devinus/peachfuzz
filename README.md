@@ -7,7 +7,7 @@ Simple Mustache inspired string substitution.
 ## API
 
 ```ts
-peachfuzz(template: string, context: object, transform: function): string
+peachfuzz(template: string, context: Object, transform: Function): string
 ```
 
 ## Usage
