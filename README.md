@@ -1,6 +1,8 @@
 # peachfuzz
 
-![Peach fuzz](peachfuzz.jpg)
+![Travis CI Status](https://img.shields.io/travis/devinus/peachfuzz.svg)
+
+![Peach Fuzz](peachfuzz.jpg)
 
 Simple Mustache inspired string substitution.
 
