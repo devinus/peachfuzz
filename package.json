@@ -1,6 +1,6 @@
 {
   "name": "peachfuzz",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Simple Mustache inspired string substitution",
   "main": "index.js",
   "scripts": {
